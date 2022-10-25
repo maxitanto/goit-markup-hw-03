@@ -10,12 +10,6 @@
 	--bcg-section-btn-color: #F5F4FA;
 }
 
-.list {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
 h1, 
 h2, 
 h3, 
@@ -27,25 +21,43 @@ p {
 	margin-bottom: 0;
 }
 
+ul {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+.list {
+	list-style: none;
+}
+
 .link {
 	text-decoration: none;
 }
 
+.container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right:auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 body {
+	color: var(--primary-text-color);
 	font-family: "Roboto", sans-serif;
 	font-size: 14px;
-	color: var(--primary-text-color);
-	background-color: var(--secondary-color);
 	letter-spacing: 00.03em;
+	background-color: var(--secondary-color);
 }
 
 /* ==========START COMPONENTS========== */
 .logo {
+	color: var(--accent-color);
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
-	color: var(--accent-color);
 }
 
 .navigation .current,
@@ -63,8 +75,8 @@ body {
 .hero-btn,
 .btn-filter:hover,
 .btn-filter:focus {
-	background-color: var(--accent-color);
 	color: var(--secondary-color);
+	background-color: var(--accent-color);
 }
 
 .btn {
@@ -80,10 +92,11 @@ body {
 
 .products-title,
 .team-title {
+	text-align: center;
+	
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
-	text-align: center;
 }
 
 .team,
@@ -93,35 +106,68 @@ body {
 /* ==========END COMPONENTS========== */
 
 /* ==========START HEADER========== */
+.header-flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-page {
+	display: flex;
+	align-items: center;
+}
+
+.nav-page > .logo {
+	margin-right: 92px;
+} 
+
 .logo-header {
 	color: var(--text-logo-color);
 }
 
 .navigation,
 .header-contacts {
+	display: flex;
+
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 }
 
+.navigation .item:not(:last-child) {
+	margin-right: 50px;
+}
+
 .nav-link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
 	color: var(--primary-text-color);
 }
 
+.header-contacts .item:not(:last-child) {
+	margin-right: 50px;
+}
+
 .header-contacts-link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
 	color: var(--secondary-text-color);
 }
 /* ==========END HEADER========== */
 
 /* ==========START HERO========== */
 .hero-title {
+	text-align: center;
+
+	color: var(--secondary-color);
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
-	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-	color: var(--secondary-color);
 }
 
 .hero-btn {
@@ -156,17 +202,19 @@ body {
 }
 
 .employee-name {
+	text-align: center;
+
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.19;
-	text-align: center;
 }
 
 .employee-profession {
+	text-align: center;
+
+	color: var(--secondary-text-color);
 	font-size: 16px;
 	line-height: 1.19;
-	text-align: center;
-	color: var(--secondary-text-color);
 }
 /* ==========END TEAM========== */
 
@@ -181,8 +229,8 @@ body {
 
 .footer-maps,
 .footer-contacts-text {
-	line-height: 1.71;
 	color: var(--secondary-color);
+	line-height: 1.71;
 }
 
 .footer-contacts-text {
@@ -205,8 +253,8 @@ body {
 }
 
 .works-text {
+	color: var(--secondary-text-color);
 	font-size: 16px;
 	line-height: 1.88;
-	color:var(--secondary-text-color);
 }
 /* ==========START WORKS========== */
